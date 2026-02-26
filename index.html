@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0812" />
+  <title>IBZ AI &mdash; Automatizaci&oacute;n Inteligente que Multiplica tu Negocio</title>
+  <meta name="description" content="Transformamos tu empresa con automatizaciones de IA que eliminan el trabajo manual, reducen costes hasta un 80% y multiplican tus ingresos. Resultados garantizados en 30 d&iacute;as." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="IBZ AI inicio">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">IBZ <span class="gradient-text">AI</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#contacto" class="btn-primary nav-cta">Agenda tu Consulta Gratis &rarr;</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="particle-canvas"></canvas>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>+120 empresas automatizadas &middot; La agencia n&uacute;mero 1 de IA en Ibiza</span>
+      </div>
+      <h1 class="hero-title">
+        Multiplica tu negocio con<br />
+        <span class="gradient-text typed-text" id="typed-el"></span>
+      </h1>
+      <p class="hero-subtitle">
+        Eliminamos el trabajo manual de tu empresa con automatizaciones de IA personalizadas.<br />
+        <strong>M&aacute;s ingresos. Menos costes. Sin fricciones.</strong>
+      </p>
+      <div class="hero-ctas">
+        <a href="#contacto" id="cta-hero-primary" class="btn-primary btn-xl">
+          <span>Quiero Automatizar mi Negocio</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#proceso" id="cta-hero-secondary" class="btn-ghost btn-xl">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+          Ver c&oacute;mo funciona
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="80">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Reducci&oacute;n de costes operativos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="120">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Empresas transformadas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="30">0</span><span class="stat-suffix"> d&iacute;as</span>
+          <span class="stat-label">Para ver resultados reales</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">0</span><span class="stat-suffix">x</span>
+          <span class="stat-label">ROI promedio primer a&ntilde;o</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="logos-section">
+    <p class="logos-label">Conf&iacute;an en nosotros</p>
+    <div class="logos-track">
+      <div class="logos-slide">
+        <span class="logo-pill">🏢 TechCorp SA</span>
+        <span class="logo-pill">🛍 MegaStore</span>
+        <span class="logo-pill">🏥 MediSalud</span>
+        <span class="logo-pill">🏦 FinanzasPro</span>
+        <span class="logo-pill">🚚 LogiRed</span>
+        <span class="logo-pill">📊 DataInsights</span>
+        <span class="logo-pill">🏗️ ConstructPlus</span>
+        <span class="logo-pill">✈️ TravelMind</span>
+        <span class="logo-pill">🎓 EduNext</span>
+        <span class="logo-pill">⚡ EnerGroup</span>
+        <span class="logo-pill">🏢 TechCorp SA</span>
+        <span class="logo-pill">🛍 MegaStore</span>
+        <span class="logo-pill">🏥 MediSalud</span>
+        <span class="logo-pill">🏦 FinanzasPro</span>
+        <span class="logo-pill">🚚 LogiRed</span>
+        <span class="logo-pill">📊 DataInsights</span>
+        <span class="logo-pill">🏗️ ConstructPlus</span>
+        <span class="logo-pill">✈️ TravelMind</span>
+        <span class="logo-pill">🎓 EduNext</span>
+        <span class="logo-pill">⚡ EnerGroup</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN vs SOLUTION -->
+  <section class="pain-section">
+    <div class="container">
+      <div class="pain-grid">
+        <div class="pain-col pain-col--before">
+          <div class="pain-tag pain-tag--red">❌ Sin automatizaci&oacute;n</div>
+          <ul class="pain-list" role="list">
+            <li>Empleados haciendo tareas repetitivas 8h al d&iacute;a</li>
+            <li>Errores humanos que cuestan miles de euros</li>
+            <li>Respuestas lentas que pierden clientes</li>
+            <li>Imposible escalar sin contratar m&aacute;s personal</li>
+            <li>Datos dispersos, sin visibilidad real</li>
+            <li>Competencia que avanza m&aacute;s r&aacute;pido</li>
+          </ul>
+        </div>
+        <div class="pain-arrow"><span>&rarr;</span></div>
+        <div class="pain-col pain-col--after">
+          <div class="pain-tag pain-tag--green">✅ Con IBZ AI</div>
+          <ul class="pain-list pain-list--after" role="list">
+            <li>Procesos de negocio 100% automatizados 24/7</li>
+            <li>Cero errores humanos en operaciones cr&iacute;ticas</li>
+            <li>Respuestas instant&aacute;neas con IA conversacional</li>
+            <li>Escala ilimitada sin a&ntilde;adir headcount</li>
+            <li>Dashboard en tiempo real de todo tu negocio</li>
+            <li>Ventaja competitiva brutal y sostenida</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Servicios</span>
+        <h2 class="section-title">Todo lo que necesitas para <span class="gradient-text">automatizar y crecer</span></h2>
+        <p class="section-subtitle">Soluciones de IA y automatizaci&oacute;n hechas a medida para tu industria y objetivos espec&iacute;ficos.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card service-card--featured">
+          <div class="service-icon">🤖</div>
+          <div class="service-badge">M&aacute;s Popular</div>
+          <h3>Agentes de IA Aut&oacute;nomos</h3>
+          <p>Agentes inteligentes que gestionan leads, responden clientes, califican prospectos y cierran ventas mientras duermes.</p>
+          <ul class="service-features">
+            <li>✓ Gesti&oacute;n de leads 24/7</li>
+            <li>✓ Seguimiento autom&aacute;tico</li>
+            <li>✓ CRM integrado</li>
+            <li>✓ Multicanal (WhatsApp, Email, Web)</li>
+          </ul>
+          <a href="#contacto" class="btn-primary btn-sm">Quiero este servicio &rarr;</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Automatizaci&oacute;n de Procesos</h3>
+          <p>Conectamos y automatizamos todos tus sistemas: ERP, CRM, facturaci&oacute;n, log&iacute;stica y m&aacute;s con n8n y Make.</p>
+          <ul class="service-features">
+            <li>✓ Integraci&oacute;n de sistemas</li>
+            <li>✓ Flujos sin c&oacute;digo</li>
+            <li>✓ 500+ integraciones</li>
+            <li>✓ Alertas y reportes</li>
+          </ul>
+          <a href="#contacto" class="service-cta">Saber m&aacute;s &rarr;</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💬</div>
+          <h3>Chatbots &amp; Asistentes IA</h3>
+          <p>Chatbots entrenados con tu base de conocimiento que atienden a tus clientes mejor que cualquier humano.</p>
+          <ul class="service-features">
+            <li>✓ Entrenado con tus datos</li>
+            <li>✓ Integraci&oacute;n WhatsApp/Web</li>
+            <li>✓ Escalada a humano</li>
+            <li>✓ Analytics completo</li>
+          </ul>
+          <a href="#contacto" class="service-cta">Saber m&aacute;s &rarr;</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Business Intelligence IA</h3>
+          <p>Dashboards en tiempo real con IA predictiva que te dice qu&eacute; va a pasar antes de que pase.</p>
+          <ul class="service-features">
+            <li>✓ Dashboards en tiempo real</li>
+            <li>✓ Predicciones de ventas</li>
+            <li>✓ Detecci&oacute;n de anomal&iacute;as</li>
+            <li>✓ Reportes autom&aacute;ticos</li>
+          </ul>
+          <a href="#contacto" class="service-cta">Saber m&aacute;s &rarr;</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✉️</div>
+          <h3>Marketing Automation</h3>
+          <p>Secuencias de email, SMS y WhatsApp hiperpersonalizadas con IA que convierten prospectos en clientes.</p>
+          <ul class="service-features">
+            <li>✓ Email marketing IA</li>
+            <li>✓ Segmentaci&oacute;n din&aacute;mica</li>
+            <li>✓ A/B testing autom&aacute;tico</li>
+            <li>✓ Lead scoring</li>
+          </ul>
+          <a href="#contacto" class="service-cta">Saber m&aacute;s &rarr;</a>
+        </div>
+        <div class="service-card service-card--cta">
+          <div class="service-icon">🚀</div>
+          <h3>&iquest;Necesitas algo espec&iacute;fico?</h3>
+          <p>Cada empresa es &uacute;nica. Contamos con un equipo de ingenieros de IA preparados para cualquier reto.</p>
+          <a href="#contacto" class="btn-primary btn-sm" style="margin-top: auto;">Hablar con un experto &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso" class="process-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">C&oacute;mo Funciona</span>
+        <h2 class="section-title">De cero a <span class="gradient-text">automatizado en 4 pasos</span></h2>
+        <p class="section-subtitle">Un proceso claro, probado y sin fricciones para transformar tu negocio.</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon">🔍</div>
+            <h3>Auditor&iacute;a Gratuita</h3>
+            <p>Analizamos tu empresa en profundidad: procesos, herramientas, cuellos de botella y oportunidades de automatizaci&oacute;n. Sin coste, sin compromiso.</p>
+            <span class="step-time">⏱ Semana 1</span>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon">🗺️</div>
+            <h3>Plan de Automatizaci&oacute;n</h3>
+            <p>Te presentamos un roadmap detallado con el ROI esperado, las automatizaciones priorizadas por impacto y el plan de implementaci&oacute;n.</p>
+            <span class="step-time">⏱ Semana 2</span>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon">⚙️</div>
+            <h3>Implementaci&oacute;n R&aacute;pida</h3>
+            <p>Nuestro equipo desarrolla e integra todas las automatizaciones con tu stack actual. Cero interrupciones, m&aacute;xima velocidad.</p>
+            <span class="step-time">⏱ Semanas 3&ndash;5</span>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon">📈</div>
+            <h3>Optimizaci&oacute;n Continua</h3>
+            <p>Monitorizamos y mejoramos tus automatizaciones cada mes. Soporte ilimitado y actualizaciones incluidas.</p>
+            <span class="step-time">⏱ Mes 2+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section id="resultados" class="results-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Casos de &eacute;xito</span>
+        <h2 class="section-title">N&uacute;meros reales de <span class="gradient-text">clientes reales</span></h2>
+      </div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-company">🏢 E-commerce &middot; Moda</div>
+          <div class="result-metric">
+            <span class="result-number">+340%</span>
+            <span class="result-label">en ventas en 90 d&iacute;as</span>
+          </div>
+          <p class="result-desc">Automatizamos el seguimiento de carritos abandonados, upselling y atenci&oacute;n al cliente con IA. El equipo redujo a la mitad.</p>
+          <div class="result-tags">
+            <span class="tag">Email Automation</span>
+            <span class="tag">Chatbot IA</span>
+            <span class="tag">Upselling</span>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="result-company">🏥 Cl&iacute;nica Dental &middot; Salud</div>
+          <div class="result-metric">
+            <span class="result-number">-75%</span>
+            <span class="result-label">en tiempo administrativo</span>
+          </div>
+          <p class="result-desc">Automatizamos citas, recordatorios, facturaci&oacute;n y seguimiento post-consulta. Ahora el equipo se enfoca en los pacientes.</p>
+          <div class="result-tags">
+            <span class="tag">Gesti&oacute;n de Citas</span>
+            <span class="tag">Facturaci&oacute;n</span>
+            <span class="tag">WhatsApp Bot</span>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="result-company">🚚 Log&iacute;stica &middot; Transporte</div>
+          <div class="result-metric">
+            <span class="result-number">&euro;2.4M</span>
+            <span class="result-label">ahorrados en operaciones</span>
+          </div>
+          <p class="result-desc">Optimizamos rutas con IA, automatizamos la gesti&oacute;n de flota, conductores y seguimiento de pedidos en tiempo real.</p>
+          <div class="result-tags">
+            <span class="tag">Optimizaci&oacute;n de Rutas</span>
+            <span class="tag">Gesti&oacute;n de Flota</span>
+            <span class="tag">Dashboard BI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonios</span>
+        <h2 class="section-title">Lo que dicen nuestros <span class="gradient-text">clientes</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"En 6 semanas automatizaron toda nuestra gesti&oacute;n de leads. Ahora generamos el doble de oportunidades con el mismo equipo. Incre&iacute;ble."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CM</div>
+            <div><strong>Carlos Mendoza</strong><span>CEO &middot; TechVentures SL</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-card--featured">
+          <div class="stars">★★★★★</div>
+          <p>"El ROI fue brutal. En 3 meses recuperamos 5 veces lo invertido. Nuestro chatbot de IA atiende 600 consultas diarias sin intervenci&oacute;n humana."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AR</div>
+            <div><strong>Ana Rodr&iacute;guez</strong><span>Directora Operaciones &middot; MediSalud</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Pensaba que la automatizaci&oacute;n era solo para grandes empresas. IBZ AI me demostr&oacute; lo contrario. Mi peque&ntilde;a empresa ahora compite con gigantes."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JP</div>
+            <div><strong>Javier P&eacute;rez</strong><span>Fundador &middot; AgenciaCrea</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Preguntas <span class="gradient-text">frecuentes</span></h2>
+      </div>
+      <div class="faq-list" id="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>&iquest;Cu&aacute;nto tiempo tarda en verse el ROI?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>La mayor&iacute;a de nuestros clientes ven retorno positivo en los primeros 30&ndash;60 d&iacute;as. Garantizamos resultados medibles en 90 d&iacute;as o te devolvemos el dinero.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>&iquest;Necesito tener conocimientos t&eacute;cnicos?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Para nada. Nos encargamos de todo: an&aacute;lisis, dise&ntilde;o, desarrollo, integraci&oacute;n y mantenimiento. T&uacute; solo defines tus objetivos de negocio.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>&iquest;Funciona con mis herramientas actuales?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>S&iacute;. Integramos con m&aacute;s de 500 aplicaciones: Salesforce, HubSpot, SAP, Shopify, WooCommerce, Google Workspace, Microsoft 365 y cualquier API.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>&iquest;Qu&eacute; pasa si algo falla?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Monitorizaci&oacute;n 24/7. Si alguna automatizaci&oacute;n falla, nuestro equipo lo resolver&aacute; en menos de 2 horas. Garantizamos 99.9% de uptime.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>&iquest;Cu&aacute;l es el precio m&iacute;nimo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Cada proyecto es personalizado. La consulta inicial siempre es gratuita y sin compromiso. Agenda una llamada para tu propuesta personalizada.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>&iquest;Mis datos est&aacute;n seguros?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Cumplimos con GDPR. Tus datos nunca se comparten con terceros. Usamos encriptaci&oacute;n end-to-end y servidores en Europa.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contacto" class="cta-section">
+    <div class="cta-bg">
+      <div class="orb orb-cta-1"></div>
+      <div class="orb orb-cta-2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-content">
+          <span class="section-tag">Empieza Hoy</span>
+          <h2 class="cta-title">&iquest;Listo para <span class="gradient-text">transformar tu empresa</span>?</h2>
+          <p class="cta-subtitle">Agenda una consulta gratuita de 30 minutos. Sin ventas agresivas, solo valor real.</p>
+          <div class="cta-guarantees">
+            <div class="guarantee-item">✓ Consulta 100% gratuita</div>
+            <div class="guarantee-item">✓ Sin compromiso</div>
+            <div class="guarantee-item">✓ ROI garantizado en 90 d&iacute;as</div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required />
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa *</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Tu empresa" autocomplete="organization" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="+34 600 000 000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="reto">&iquest;Cu&aacute;l es tu mayor reto operativo?</label>
+              <select id="reto" name="reto">
+                <option value="">Selecciona...</option>
+                <option value="ventas">Generar y gestionar m&aacute;s ventas</option>
+                <option value="atencion">Atenci&oacute;n al cliente 24/7</option>
+                <option value="procesos">Automatizar procesos internos</option>
+                <option value="datos">An&aacute;lisis de datos y reportes</option>
+                <option value="marketing">Marketing y captaci&oacute;n</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <button type="submit" id="form-submit" class="btn-primary btn-full">
+              <span id="btn-text">Agendar Consulta Gratuita &rarr;</span>
+              <span id="btn-loading" style="display:none;">Enviando&hellip;</span>
+            </button>
+            <p class="form-disclaimer">🔒 Sin spam. Tus datos est&aacute;n protegidos por GDPR.</p>
+          </form>
+          <div id="form-success" class="form-success" style="display:none;">
+            <div class="success-icon">🎉</div>
+            <h3>&iexcl;Solicitud recibida!</h3>
+            <p>Te contactaremos en menos de <strong>2 horas</strong> para confirmar tu consulta gratuita.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="IBZ AI">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">IBZ <span class="gradient-text">AI</span></span>
+          </a>
+          <p>Transformamos empresas con automatizaciones de IA que generan resultados reales y medibles.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter/X">𝕏</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="#servicios">Agentes de IA</a></li>
+              <li><a href="#servicios">Automatizaci&oacute;n de Procesos</a></li>
+              <li><a href="#servicios">Chatbots</a></li>
+              <li><a href="#servicios">Business Intelligence</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#proceso">C&oacute;mo Funciona</a></li>
+              <li><a href="#resultados">Casos de &eacute;xito</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 IBZ AI. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Pol&iacute;tica de Privacidad</a>
+          <a href="#">T&eacute;rminos de Uso</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
